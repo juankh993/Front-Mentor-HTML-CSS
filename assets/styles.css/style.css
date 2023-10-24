@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+.attribution { 
+    font-size: 11px; text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+p {
+    Font-size: 18px;
+}
+main {
+    width: 375px;
+    margin: 0 auto;
+    text-align: center;
+}
+.result {
+    background: rgb(120,87,255);
+    background: linear-gradient(180deg, hsl(252, 100%, 67%) 0%, hsl(241, 81%, 54%) 50%);
+    padding: 2rem 0;
+    border-radius: 0 0 20px 20px;
+}
+h1, h2 {
+    color: hsl(0, 0%, 100%);
+}
+h3, .color-paragraph {
+    padding: 0 2rem;
+    color: hsl(241, 100%, 89%);
+}
+.circle-number {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: hsl(241, 81%, 54%);
+    background: rgb(120,87,255);
+    background: linear-gradient(180deg, hsl(241, 81%, 50%) 0%, hsl(240, 79%, 58%) 100%);
+    margin: 15px auto;
+}
+.circle-number p {
+    color: hsl(241, 100%, 89%);
+}
+.summary {
+    display: flex;
+    flex-direction: column;
+    /* text-align: left; */
+    margin: 1rem 2rem;
+}
+h4 {
+    display: flex;
+}
+.border-summary {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 10px auto;
+    border-radius: 5px;
+    border: 0.5px solid;
+    padding: 10px 0;
+}
+.image-reaction {
+    display: flex;
+    gap: 5px;
+    color: hsl(0, 100%, 67%);
+}
+.image-memory {
+    display: flex;
+    gap: 5px;
+    color: hsl(39, 100%, 56%);
+}
+.image-verbal {
+    display: flex;
+    gap: 5px;
+    color: hsl(166, 100%, 37%);
+}
+.image-visual {
+    display: flex;
+    gap: 5px;
+    color: hsl(234, 85%, 45%);
+}
+.bg-reaction {
+    background: hsla(0, 80%, 98%, 1);
+}
+.bg-memory {
+    background: hsla(42, 100%, 97%, 1);
+}
+.bg-verbal {
+    background: hsla(180, 41%, 97%, 1);
+}
+.bg-visual {
+    background: hsla(240, 71%, 97%, 1);
+}
+.button-continue {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background: hsl(224, 30%, 27%);
+    padding: 1rem;
+    border-radius: 30px;
+    margin: 1rem 0 0 0;
+}
+.button-continue > a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+.button-continue:hover {
+    background: linear-gradient(180deg, hsl(241, 81%, 50%) 0%, hsl(240, 79%, 58%) 100%);
+    box-shadow: 2px 2px 5px #999;
+    cursor: pointer;
+}
+                /* BREAKPOINTS */
+
+
+
+@media (max-width: 1440px){
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 50%;
+        margin: 5rem auto;
+        border-radius: 20px;
+    }
+    .result {
+        border-radius: 20px;
+
+    }
+}
+
+@media (max-width: 375px){
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100vw;
+        margin: 5rem auto;
+
+    }
+}
+
+
